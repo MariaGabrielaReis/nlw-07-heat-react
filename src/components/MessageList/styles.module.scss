@@ -27,27 +27,31 @@
     }
 
     .messageUser {
-      margin-top: 16px;
-      display: flex;
-      align-items: center;
+      a {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
 
-      .userImage {
-        padding: 2px;
-        background: linear-gradient(100deg, #00ffd1 0%, #4ca6a7 100%);
-        border-radius: 50%;
-        line-height: 0;
-
-        img {
-          width: 30px;
-          height: 30px;
+        .userImage {
+          padding: 2px;
+          background: linear-gradient(100deg, #00ffd1 0%, #4ca6a7 100%);
           border-radius: 50%;
-          border: 2px solid #121214;
-        }
-      }
+          line-height: 0;
 
-      span {
-        font-size: 16px;
-        margin-left: 12px;
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #121214;
+          }
+        }
+
+        span {
+          font-size: 16px;
+          margin-left: 12px;
+        }
       }
     }
   }

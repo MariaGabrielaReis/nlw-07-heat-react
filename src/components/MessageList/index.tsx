@@ -11,6 +11,7 @@ type Message = {
   user: {
     name: string;
     avatar_url: string;
+    login: string;
   };
 };
 
@@ -39,6 +40,7 @@ export function MessageList() {
   useEffect(() => {
     api.get<Message[]>('messages/last3').then(response => {
       setMessages(response.data);
+      console.log(response.data);
     });
   }, []);
 
@@ -106,10 +108,18 @@ export function MessageList() {
             <li key={message.id} className={styles.message}>
               <p className={styles.messageContent}>{message.text}</p>
               <div className={styles.messageUser}>
-                <div className={styles.userImage}>
-                  <img src={message.user.avatar_url} alt={message.user.name} />
-                </div>
-                <span>{message.user.name}</span>
+                <a
+                  href={`https://github.com/${message.user.login}`}
+                  target={'_blank'}
+                >
+                  <div className={styles.userImage}>
+                    <img
+                      src={message.user.avatar_url}
+                      alt={message.user.name}
+                    />
+                  </div>
+                  <span>{message.user.name}</span>
+                </a>
               </div>
             </li>
           );
