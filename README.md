@@ -31,7 +31,7 @@ Abaixo é possível encontrar uma demonstração das telas e funcionalidades do 
 conferir o layout original das telas, é só acessar [este link](https://www.figma.com/community/file/1031699316177416916) para o projeto no Figma.
   
 <p align="center">
-  <img alt="Demonstração" src=".github/demo-react.gif" />
+  <img alt="Demonstração" src="./demo-react.gif" />
 </p>
 
 <span id="requisitos">
