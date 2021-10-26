@@ -21,6 +21,7 @@ As seguintes tecnologias e ferramentas estão sendo utilizadas neste projeto:
 
 - [Figma](http://www.figma.com/)
 - [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Socket.io](https://expo.io/)
 - [Axios](https://www.typescriptlang.org/)
 
